@@ -1,0 +1,36 @@
+body{background-color: #1d1f21; font-family: 'Lora', serif; color: #7a4f22; font-size: 0.8em;}
+abbr{border-bottom: 1px dashed #ae8a65;cursor: inherit !important; text-decoration: none !important;}
+#centerCanvas { /* width: 928px; height: /* 545 */ /*483px ; overflow: visible; position: relative; margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);*/ position: absolute; transform: none; width: 928pxpx; height: 483px; position: absolute; margin-top: -242px; margin-left: -464px; top: 50%; left: 50%;}
+#gameCanvas {border: 4px solid #fff; width: 920px; height: /* 545 */475px ; overflow:hidden ; position: absolute; border-radius: 15px;}
+
+button{padding: 5px 10px; margin: 0 5px; border: 2px solid #ae8a65; color: #7a4f22; cursor: pointer; background-color: #f4e8d8; outline: none; font-family: 'Lora', serif; border-radius: 4px;}
+button:hover, button:focus{ cursor: pointer; transition: all 500ms ease; transition-property: background-color, border; border: 2px solid #f4e8d8; color: #f4e8d8; background-color: #7a4f22;}
+footer{padding: 10px 0; text-align: center;}
+#start {position: absolute; width: 280px; height: 202px; background: transparent url(../images/objects/parchment.png) 0 0 no-repeat; background-size: 500px 302px; z-index: 300; top: 80px; left: 330px; padding: 50px 110px;}
+#mask{width: 300px; height: 202px; position: relative; overflow: hidden;}
+h1, h2{ font-size: 1.4em; margin-top: 0; padding-top: 15px;}
+section{display: block; width: 300px; height: 202px;}
+section a{color: #7a4f22 ; text-decoration: none;}
+#section1 {position: relative;}
+.content span{border: 2px solid #ae8a65; margin-left: 10px; margin-right: 5px; border-radius: 50%; padding: 2px; width: 14px; height: 14px; text-align: center; display: inline-block; text-transform: uppercase;}
+#playerinfo {position: absolute; color: #333; top: 20px; right:40px; visibility: hidden; width: 300px; z-index: 300; text-align: right; font-size: 1.5em; font-weight: bold;}
+#scene{position: absolute; left: 0; top: 0; width: 4605px /*2760px*/; height: 545px; background-color: #b8dbf6; }
+#ground{position: absolute; z-index: 100; background: transparent url(../images/background/ground.png) 0 0 repeat-x; background-size: 921px 183px; width: 100%; height: 183px; left: 0; bottom: 0; }
+#trees{position: absolute; z-index: 90; background: transparent url(../images/background/trees.png) 0 0 repeat-x; background-size: 921px 276px; width: 100%; height: 276px; left: 0; top: 244px; }
+#mountains{position: absolute; z-index: 80; background: transparent url(../images/background/mountains.png) 0 0 repeat-x; background-size: 921px 246px; width: 5284px; height: 246px; left: 0; top: 153px; }
+#mountainsShadow{position: absolute; z-index: 70; background: transparent url(../images/background/mountain_shadow.png) 0 0 repeat-x; background-size: 921px 221px; width: 5084px; height: 221px; left: 0; top: 186px; }
+#sky1{position: absolute; z-index: 60; background: transparent url(../images/background/sky1.png) 0 0 repeat-x; background-size: 921px 417px; width: 100%; height: 417px; left: 0; top: 100px; }
+#sky2{position: absolute; z-index: 50; background: transparent url(../images/background/sky2.png) 0 0 repeat-x; background-size: 921px 159px; width: 100%; height: 159px; left: 0; top: 27px; }
+#clouds{position: absolute; z-index: 110; background: transparent url(../images/background/clouds.png) 0 0 repeat-x; background-size: 921px 198px; width: 100%; height: 198px; left: 0; top: 10px; }
+.clouds{position: absolute; z-index: 110; background: transparent url(../images/background/clouds.png) 0 0 repeat-x; background-size: 921px 198px; width: 100%; height: 198px; left: 0; top: 10px; }
+#castle1 {position: absolute; z-index: 130; left: 10px; top: 54px; width: 294px; height: 348px;}
+#castle1 img {display: block;}
+#sign{position: absolute; z-index: 130; left: /*154*/800px; top: 396px; width: 49px; height: 48px;}
+
+#castle2 {position: absolute; z-index: 130; right: 290px; top: 75px; width: 294px; height: 348px;}
+#castle2 img {display: block;}
+
+#container {position: absolute; border: 2px solid red;}
+
+.knife {z-index: 160; background: transparent url(../images/characters/main_character.png) -424px -407px no-repeat; background-size: 781px 528px; }
+.reverse {transform: scaleX(-1);}

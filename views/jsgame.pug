@@ -1,0 +1,104 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(content='IE=edge', http-equiv='X-UA-Compatible')
+    meta(content='width=device-width, initial-scale=1', name='viewport')
+    title Play and Win my CV! - Vinaro Sam
+    link(href='/jsgame/css/style.css', rel='stylesheet')
+    link(href='/jsgame/favicon/apple-icon-57x57.png', rel='apple-touch-icon', sizes='57x57')
+    link(href='/jsgame/favicon/apple-icon-60x60.png', rel='apple-touch-icon', sizes='60x60')
+    link(href='/jsgame/favicon/apple-icon-72x72.png', rel='apple-touch-icon', sizes='72x72')
+    link(href='/jsgame/favicon/apple-icon-76x76.png', rel='apple-touch-icon', sizes='76x76')
+    link(href='/jsgame/favicon/apple-icon-114x114.png', rel='apple-touch-icon', sizes='114x114')
+    link(href='/jsgame/favicon/apple-icon-120x120.png', rel='apple-touch-icon', sizes='120x120')
+    link(href='/jsgame/favicon/apple-icon-144x144.png', rel='apple-touch-icon', sizes='144x144')
+    link(href='/jsgame/favicon/apple-icon-152x152.png', rel='apple-touch-icon', sizes='152x152')
+    link(href='/jsgame/favicon/apple-icon-180x180.png', rel='apple-touch-icon', sizes='180x180')
+    link(href='/jsgame/favicon/android-icon-192x192.png', rel='icon', sizes='192x192', type='image/png')
+    link(href='/jsgame/favicon/favicon-32x32.png', rel='icon', sizes='32x32', type='image/png')
+    link(href='/jsgame/favicon/favicon-96x96.png', rel='icon', sizes='96x96', type='image/png')
+    link(href='/jsgame/favicon/favicon-16x16.png', rel='icon', sizes='16x16', type='image/png')
+    link(href='/jsgame/favicon/manifest.json', rel='manifest')
+    link(href='https://fonts.googleapis.com/css?family=Lora', rel='stylesheet')
+    meta(content='#ffffff', name='msapplication-TileColor')
+    meta(content='favicon/ms-icon-144x144.png', name='msapplication-TileImage')
+    meta(content='#ffffff', name='theme-color')
+    //if IE
+      link(rel='stylesheet', type='text/css', href='/jsgame/css/all-ie-only.css')
+    style.
+      #texta, #textb {position: absolute; top: 20px; right: 20px; width: 300px; border: 1px solid #ccc; display: none;}
+      #textb {top: 50px; display: none;}
+    script(src='/js/modernizr-custom.js')
+  body
+    form
+      input#texta(type='text')
+      input#textb(type='text')
+    #centerCanvas
+      #gameCanvas
+        #start
+          #mask
+            section#section1
+              h1 Welcome to my CV game
+              .content
+                p
+                  | This is part of a first javascript project related to my training at the 
+                  abbr(title='Institut de Formation Commerciale Permanente Contact: Fabienne Thiry - 01.40.21.83.78') IFOCOP
+                  |  centre.
+                p Help Vinaro acquire all his skills!
+              footer
+                button#play Play the game
+                button.download(onclick="window.location.href='/jsgame/cv/VinaroSAMCV_fr.pdf'") Download my CV
+            section#section2
+              h2 Keyboard controls
+              .content
+                p
+                  span S
+                  |  Jump 
+                  span D
+                  |  Throw (ineffective) knives
+                p
+                  span ←
+                  |  Move left 
+                  span →
+                  |  Move right
+                p Get all the skills before you leave. Ready?
+              footer
+                button#startit Start the game!
+            section#section3
+              h2 Congratulations!
+              .content
+                p Top score. You get Vinaro all the skills he needs to work for you.
+                p
+                  | Contat him right away to:
+                  br
+                  a(href='mailto:vinaro.sam@gmail.com') vinaro.sam@gmail.com
+                  |  or +33 (0)6.27.45.77.04
+              footer
+                button#startit2(onclick="window.location.href='/jsgame/'") Restart the game
+                button.download(onclick="window.location.href='/jsgame/cv/VinaroSAMCV_fr.pdf'") Download my CV
+        #playerinfo
+          // Life: <span id="life">3</span> -
+          | Score : 
+          span#score 0
+        #centerSprite
+          #heroM
+            img#heroSprite(alt='sprites', height='528', src='/jsgame/images/characters/main_character.png', width='781')
+        #scene
+          #clouds
+          #ground
+          #trees
+          #mountains
+          #mountainsShadow
+          #sky1
+          #sky2
+          #castle1
+            img(alt='', height='348', src='/jsgame/images/background/castle1.png', width='294')
+          #castle2
+            img(alt='', height='348', src='/jsgame/images/background/castle2.png', width='294')
+          #sign
+            img(alt='', height='44', src='/jsgame/images/background/sign_paris.png', width='49')
+        // end decor
+      // end gameCanvas
+    // end centerCanvas
+    script(src='/jsgame/js/script.js')

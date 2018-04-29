@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        title Turtles race
+        meta(name='viewport' content ='width=device-width, initial-scale=1, user-scalable=no')
+        link(rel='stylesheet', href='/css/style.css')
+        script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+        script.
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+            // Take the user to a different screen here.
+                alert('Vous utilisez un mobile !');
+            }
+    body
+        h1 Bienvenue sur le site de Vinaro
+        ul
+            li
+                |
+                a(href="/jsgame") Jeux Javascript
+            li
+                |
+                a(href="/turtles") Course des tortues

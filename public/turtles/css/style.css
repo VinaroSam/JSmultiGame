@@ -1,0 +1,69 @@
+body{background-color: #1d1f21; font-family: 'Lora', serif; color: #0a5383; font-size: 0.9em;}
+
+
+    
+fieldset {border: 0; padding: 0; margin: 0;}
+abbr{border-bottom: 1px dashed #0d59d7;cursor: inherit !important; text-decoration: none !important;}
+#centerCanvas { /* width: 928px; height: /* 545 */ /*483px ; overflow: visible; position: relative; margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);*/ position: absolute; transform: none; width: 928pxpx; height: 483px; position: absolute; margin-top: -242px; margin-left: -464px; top: 50%; left: 50%;}
+#gameCanvas {border: 4px solid #fff; width: 920px; height: /* 545 */475px ; overflow:hidden ; position: absolute; border-radius: 5px;}
+#username {outline: none;}
+input[type=submit]{font-size: 1.1em;}
+
+footer button, footer #startit{padding: 5px 10px; margin: 0 5px; border: 2px solid #0a5383; color: #0a5383; cursor: pointer; background-color: #fff; outline: none; font-family: 'Lora', serif; border-radius: 4px; font-size: 1.1em;}
+footer button:hover, footer button:focus, #startit:hover{ cursor: pointer; transition: all 500ms ease; transition-property: background-color, border; border: 2px solid #fff; color: #fff; background-color: #0a5383;}
+footer{padding: 10px 0; text-align: center;}
+#start {display: block; position: absolute; width: 320px; height: 202px; z-index: 300; top: 100px; left: 260px; padding: 20px 50px; background-color: rgba(255, 255, 255, 0.6); border-radius: 4px;}
+#mask{width: 320px; height: 222px; position: relative; overflow: hidden;}
+#gameCanvas h1 {visibility: hidden; position: relative; font-family: 'Caveat Brush', cursive; padding: 10px 20px; color: #1248a2; z-index: 200; font-size: 4em; text-align: center; }
+h1, h2{ font-size: 1.4em; margin-top: 0; padding-top: 15px;}
+h2 {color: #0a5383;}
+p{line-height: 1.4em;}
+section{display: block; width: auto; height: 202px;}
+section a{color: #7a4f22 ; text-decoration: none;}
+#section1 {position: relative;}
+.content span.round{border: 2px solid #0a5383; margin-left: 10px; margin-right: 5px; border-radius: 50%; padding: 2px; width: 14px; height: 14px; text-align: center; display: inline-block; text-transform: uppercase;}
+#playerinfo {position: absolute; color: #333; top: 20px; left:40px; visibility: visible ; width: 300px; z-index: 300; text-align: left; font-size: 1.5em; font-weight: bold;}
+#scene{position: absolute; left: 0; top: 0; width: 4605px /*2760px*/; height: 545px; background-color: #b8dbf6; }
+#ground{position: absolute; z-index: 100; background: transparent url(../images/background/ground.png) 0 0 repeat-x; background-size: 921px 183px; width: 100%; height: 253px; left: 0; bottom: 0; }
+#trees{position: absolute; z-index: 90; background: transparent url(../images/background/trees.png) 0 0 repeat-x; background-size: 921px 276px; width: 100%; height: 276px; left: 0; top: 144px; }
+#mountains{position: absolute; z-index: 80; background: transparent url(../images/background/mountains.png) 0 0 repeat-x; background-size: 921px 246px; width: 5284px; height: 246px; left: 0; top: 153px; }
+#mountainsShadow{position: absolute; z-index: 70; background: transparent url(../images/background/mountain_shadow.png) 0 0 repeat-x; background-size: 921px 221px; width: 5084px; height: 221px; left: 0; top: 186px; }
+#sky1{position: absolute; z-index: 60; background: transparent url(../images/background/sky1.png) 0 0 repeat-x; background-size: 921px 417px; width: 100%; height: 417px; left: 0; top: 100px; }
+#sky2{position: absolute; z-index: 50; background: transparent url(../images/background/sky2.png) 0 0 repeat-x; background-size: 921px 159px; width: 100%; height: 159px; left: 0; top: 27px; }
+#clouds{position: absolute; z-index: 110; background: transparent url(../images/background/clouds.png) 0 0 repeat-x; background-size: 921px 198px; width: 100%; height: 198px; left: 0; top: 10px; }
+.clouds{position: absolute; z-index: 110; background: transparent url(../images/background/clouds.png) 0 0 repeat-x; background-size: 921px 198px; width: 100%; height: 198px; left: 0; top: 10px; }
+#castle1 {position: absolute; z-index: 130; left: 10px; top: 54px; width: 294px; height: 348px;}
+#castle1 img {display: block;}
+#sign{position: absolute; z-index: 130; left: /*154*/800px; top: 396px; width: 49px; height: 48px;}
+#tracks {position: absolute; z-index: 100; background: transparent url(../images/background/racetracks.png) 0 0 repeat-x; background-size: 921px 138px; width: 921px; height: 128px; left: 0; top: 330px; }
+
+#errorusername {position: absolute; top: 12px; width: 300px; left: 0; color: red; display: none; text-align: left; font-size: 0.9em;}
+#userform p{margin: 5px 0; padding: 0}
+#userform label input[type=text] {font-size: 14px;}
+#userform .error {color: #f50; visibility: hidden; position: relative; top: -6px; font-size: 0.9em;}
+
+#avatars {padding-top: 5px;}
+#avatars label img {display: block; width: 34px; height: 34px; opacity: 0.4; }
+#avatars label{cursor: pointer; position: relative; display: inline-block; margin-right: 5px; width: 34px; height: 34px; border: 3px solid #fff; overflow: hidden;}
+#avatars label input {position: absolute; top: -20px; }
+
+#container {position: absolute; border: 2px solid red;}
+
+.knife {z-index: 160; background: transparent url(../images/characters/main_character.png) -424px -407px no-repeat; background-size: 781px 528px; }
+.reverse {transform: scaleX(-1); }
+
+#trackground {position: absolute; z-index: 100; top: 346px; left: 16px; width: 887px; height: 109px; background: transparent url(../images/background/trackground_green.png) 0 0 repeat; background-size: 85px 49px;}
+
+#infoBoard{position: absolute; overflow: auto; width: 300px; height: 200px; top: 70px; padding: 16px 20px; left: 500px; z-index: 200; color: #0072bc; border-radius: 5px; font-family: arial, sans-serif; font-size: 12px;}
+#infoBoard h3{padding-top: 0; margin-top: 0;}
+#infoBoard p{background-color: rgba(255, 255, 255, 0.4); padding: 5px; margin: 0 0 6px; width: 200px; border-radius: 4px; line-height: 1.8em; height: 22px;}
+#infoBoard p span{display: inline-block; height: 22px; vertical-align: top;  }
+#infoBoard p span.status{width: 10px; height: 10px; border-radius: 50%; background-color: red; margin-top:5px;}
+#infoBoard p img{display: inline-block; width: 20px; height: 20px; border: 1px solid #fff; margin-right: 10px; margin-left: 2px;}
+
+
+#gameCanvas {animation: blurit 1s}
+@keyframes blurit {
+      from { filter: blur(10px); }
+      to   { filter: blur(0); }
+    }

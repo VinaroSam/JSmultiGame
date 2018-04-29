@@ -1,0 +1,95 @@
+doctype html
+html.no-js
+    head
+        title Turtles race
+        meta(name='viewport' content ='width=device-width, initial-scale=1, user-scalable=no')
+        link(rel='stylesheet', href='/turtles/css/style.css')
+        <!--[if IE]>
+        link(rel='stylesheet', href='/turtles/css/all-ie-only.css')
+        <![endif]-->
+        script(src='/turtles/js/modernizr-custom.js')
+        script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    body
+        #centerCanvas
+            #gameCanvas
+                h1 The turtles race
+                #start
+                    #mask
+                        section#section1
+                            h2 Welcome to Vinaro's turtles race
+                            .content
+                                p
+                                    | This is my second javascript project related to my training at the 
+                                    abbr(title='Institut de Formation Commerciale Permanente\
+                                    Contact: Fabienne Thiry - 01.40.21.83.78') IFOCOP
+                                    |  centre.
+                                p Be the fastest turtle!
+                            footer
+                                button#play Play the game
+                                button.download(onclick="window.location.href='/jsgame/cv/VinaroSAMCV_fr.pdf'") Download my CV
+                        section#section2
+                            form(method="post", name="userform")#userform
+                                .content
+                                    p.error Ho ho! Please create a username and select an avatar
+                                    p
+                                        label(for="username") Create a username:
+                                            span#errorusername Username already exists. Please choose a different.
+                                            input(type='text', name='username')#username
+                                    fieldset
+                                        legend Choose an avatar:
+                                        div#avatars
+                                            label(for="avatar1")
+                                                img(src='/turtles/images/characters/avatar01.png')
+                                                input(type='radio', name='avatar', value="avatar01")#avatar1
+                                            label(for="avatar2")
+                                                img(src='/turtles/images/characters/avatar02.png')
+                                                input(type='radio', name='avatar', value="avatar02")#avatar2
+                                            label(for="avatar3")
+                                                img(src='/turtles/images/characters/avatar03.png')
+                                                input(type='radio', name='avatar', value="avatar03")#avatar3
+                                            label(for="avatar4")
+                                                img(src='/turtles/images/characters/avatar04.png')
+                                                input(type='radio', name='avatar', value="avatar04")#avatar4
+                                            label(for="avatar5")
+                                                img(src='/turtles/images/characters/avatar05.png')
+                                                input(type='radio', name='avatar', value="avatar05")#avatar5
+                                            label(for="avatar6")
+                                                img(src='/turtles/images/characters/avatar06.png')
+                                                input(type='radio', name='avatar', value="avatar06")#avatar6
+                                        
+                                    p
+                                        |  To play, alternate both keys
+                                        span.round k
+                                        | and
+                                        span.round l
+                                footer
+                                    input(type='submit', value="Start the game!")#startit
+                        section#section3
+                            h2 Congratulations!
+                            .content
+                                p Top score. You get Vinaro all the skills he needs to work for you.
+                                p
+                                | Contat him right away to:
+                                br
+                                a(href='mailto:vinaro.sam@gmail.com') vinaro.sam@gmail.com
+                                |  or +33 (0)6.27.45.77.04
+                            footer
+                                button#startit2(onclick="window.location.href='./'") Restart the game
+                                button.download(onclick="window.location.href='../cv/VinaroSAMCV_fr.pdf'") Download my CV
+                #playerinfo
+                    span#score
+                
+                #scene
+                    #clouds
+                    #ground
+                    #trackground
+                    #trees
+                    #tracks
+                    #sky1
+                    #sky2
+            // end decor
+        // end gameCanvas
+        // end centerCanvas
+        script(src='/socket.io/socket.io.js')
+        script(src='/turtles/js/script.js')
+
