@@ -4,7 +4,7 @@
   "description": "Back-end game multiplayer turtle race",
   "main": "app.js",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.18.2",
     "pug": "^3.0.2",
     "socket.io": "^2.1.0"
   },
